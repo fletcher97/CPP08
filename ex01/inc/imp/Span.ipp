@@ -6,9 +6,10 @@
 template<typename T>
 void
 Span::addNumber(const typename T::iterator& begin, const typename T::iterator& end) {
-	this->_set.insert(begin, end);
-	// for(typename T::iterator it = begin; it != end; it++)
-	// 	this->addNumber(*it);
+	if (std::distance(begin, end) + this->_set.size() > this->_size)
+		throw std::runtime_error("Can't add more items");
+	else
+		this->_set.insert(begin, end);
 }
 
 
