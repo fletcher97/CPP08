@@ -1,7 +1,6 @@
 #if !defined(EASYFIND_IPP)
 #define EASYFIND_IPP
 
-#include <iterator>
 #include <algorithm>
 
 #include "easyfind.tpp"
