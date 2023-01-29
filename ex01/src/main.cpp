@@ -34,7 +34,7 @@ main() {
 	for (int i = 0; i < SIZE; i++)
 		vec.push_back(i);
 
-	span.addNumbers<std::vector<int> >(vec.begin(), vec.end());
+	span.addNumber<std::vector<int> >(vec.begin(), vec.end());
 
 	std::cout << std::endl;
 

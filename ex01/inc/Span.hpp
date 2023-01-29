@@ -29,7 +29,7 @@ public:
 	int longestSpan() const;
 
 	template<typename T>
-	void addNumbers(const typename T::iterator& begin, const typename T::iterator& end);
+	void addNumber(const typename T::iterator& begin, const typename T::iterator& end);
 
 	void print() const;
 };

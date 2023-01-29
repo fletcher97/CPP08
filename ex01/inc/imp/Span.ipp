@@ -5,7 +5,7 @@
 
 template<typename T>
 void
-Span::addNumbers(const typename T::iterator& begin, const typename T::iterator& end) {
+Span::addNumber(const typename T::iterator& begin, const typename T::iterator& end) {
 	this->_set.insert(begin, end);
 	// for(typename T::iterator it = begin; it != end; it++)
 	// 	this->addNumber(*it);
