@@ -55,7 +55,7 @@ Span::addNumber(int i) {
 	this->_set.insert(i);
 }
 
-int
+unsigned int
 Span::shortestSpan() const {
 	if (this->_set.size() < 2)
 		throw std::logic_error("Can't calculate span with less than 2 elements");
@@ -64,7 +64,7 @@ Span::shortestSpan() const {
 	return *std::min_element(++res.begin(), res.end());
 }
 
-int
+unsigned int
 Span::longestSpan() const {
 	if (this->_set.size() < 2)
 		throw std::logic_error("Can't calculate span with less than 2 elements");

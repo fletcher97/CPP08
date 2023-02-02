@@ -25,8 +25,8 @@ public:
 
 	void addNumber(int i);
 
-	int shortestSpan() const;
-	int longestSpan() const;
+	unsigned int shortestSpan() const;
+	unsigned int longestSpan() const;
 
 	template<typename T>
 	void addNumber(const typename T::iterator& begin, const typename T::iterator& end);
