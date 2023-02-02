@@ -14,8 +14,8 @@ private:
 
 public:
 	Span(unsigned int n);
-	Span(Span& other);
-	Span& operator=(Span& other);
+	Span(const Span& other);
+	Span& operator=(const Span& other);
 	~Span();
 
 	int operator[](unsigned int i) const;

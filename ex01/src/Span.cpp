@@ -15,13 +15,13 @@ Span::Span(unsigned int n) {
 	this->_set = std::multiset<int>();
 }
 
-Span::Span(Span& other) {
+Span::Span(const Span& other) {
 	this->_size = other._size;
 	this->_set = other._set;
 }
 
 Span&
-Span::operator=(Span& other) {
+Span::operator=(const Span& other) {
 	this->_size = other._size;
 	this->_set = other._set;
 	return *this;
